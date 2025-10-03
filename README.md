@@ -31,7 +31,7 @@ print("=== Challenge 2: Prime Number Checker ===")
 current_number = int(input("Enter a number: ")) # grabbing input yes yes
 found_divisor = True
 if current_number > 0:
-    for meow in range (2,current_number): # checking every number 2 through the number
+    for meow in range (2,current_number): # checking every number 2 through the number (for loop because I DO know how many times)
         if current_number % meow == 0: # yippee! making sure it aint disvisible 
                found_divisor = False
                break
@@ -60,7 +60,7 @@ for col in range(1, 11):
 print()
 
 # Print rows
-for row in range(1, 11):
+for row in range(1, 11): # (for loop because i do know how many times i want it to run
     print(f"{row:2} ", end="")   # row numbersss
     for col in range(1, 11):
         product = row * col
