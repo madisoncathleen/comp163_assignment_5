@@ -25,3 +25,29 @@ if current_number == 1:
 
 
 #---------------------------------------------------------------------------------------------------------------
+
+print()
+print("=== Challenge 2: Prime Number Checker ===")
+current_number = int(input("Enter a number: ")) # grabbing input yes yes
+found_divisor = True
+if current_number > 0:
+    for meow in range (2,current_number): # checking every number 2 through the number
+        if current_number % meow == 0: # yippee! making sure it aint disvisible 
+               found_divisor = False
+               break
+        
+        
+        else:
+               found_divisor = True
+else:
+    found_divisor = False
+
+print(f"Testing divisors from 2 to {current_number - 1}...")
+if found_divisor:
+    print(f"{current_number} is prime!")
+else:
+    print(f"{current_number} is not prime (divisible by 3)")
+print()
+
+#---------------------------------------------------------------------------------------------------------------
+
