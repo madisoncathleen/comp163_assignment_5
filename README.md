@@ -51,3 +51,20 @@ print()
 
 #---------------------------------------------------------------------------------------------------------------
 
+print("=== Challenge 3: Multiplication Table ===")
+print("Multiplication Table:")
+
+print("   ", end="")   # empty space in the cornerrrrr
+for col in range(1, 11):
+    print(f"{col:4}",end="")   # printing the col numbaas
+print()
+
+# Print rows
+for row in range(1, 11):
+    print(f"{row:2} ", end="")   # row numbersss
+    for col in range(1, 11):
+        product = row * col
+        print(f"{product:4}", end="")   # printing the stuff yes yes
+    print()   # movin to next line
+
+
